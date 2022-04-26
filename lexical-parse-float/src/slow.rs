@@ -559,7 +559,7 @@ pub fn byte_comp<F: RawFloat, const FORMAT: u128>(
 
     // Now, create a scaling factor for the digit count.
     let mut factor = Bigfloat::from_u32(1);
-    factor.pow(format.radix(), sci_exp.unsigned_abs()).unwrap();
+    factor.pow(format.radix(), sci_exp.unsigned_abs() as u32).unwrap();
     let mut num: Bigfloat;
     let mut den: Bigfloat;
 
