@@ -7,7 +7,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  # All parser mayhemfiles (there should be 24)
+   # All parser mayhemfiles (there should be 24)
   PARSE-INT-I8-MAYHEMFILE: parse-integer-i8.mayhemfile
   PARSE-INT-I16-MAYHEMFILE: parse-integer-i16.mayhemfile
   PARSE-INT-I32-MAYHEMFILE: parse-integer-i32.mayhemfile
@@ -36,8 +36,6 @@ env:
   WRITE-INT-U64: write-integer-u64.mayhemfile
   WRITE-INT-U128: write-integer-u128.mayhemfile
   WRITE-INT-USIZE: write-integer-usize.mayhemfile
-
-
 
 jobs:
   build:
@@ -76,6 +74,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
+      # start analysis for each mayhemfile
       # parse integer i8
       - name: Start analysis for parse-integer-i8
         uses: ForAllSecure/mcode-action@v1
@@ -305,7 +304,6 @@ jobs:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.WRITE-INTEGER-USIZE }}
         sarif-output: sarif
-
 
       - name: Upload SARIF file(s)
         uses: github/codeql-action/upload-sarif@v1
