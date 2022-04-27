@@ -7,7 +7,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-   # All parser mayhemfiles (there should be 24)
+  # All parser mayhemfiles (there should be 24)
   PARSE-INT-I8-MAYHEMFILE: parse-integer-i8.mayhemfile
   PARSE-INT-I16-MAYHEMFILE: parse-integer-i16.mayhemfile
   PARSE-INT-I32-MAYHEMFILE: parse-integer-i32.mayhemfile
@@ -50,7 +50,7 @@ jobs:
           - os: ubuntu-latest
             triplet: x64-linux
 
-    steps:
+		steps:
       - uses: actions/checkout@v2
 
       - name: Log in to the Container registry
