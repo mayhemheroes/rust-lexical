@@ -8,34 +8,34 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
   # All parser mayhemfiles (there should be 24)
-  PARSE-INT-I8-MAYHEMFILE: parse-integer-i8.mayhemfile
-  PARSE-INT-I16-MAYHEMFILE: parse-integer-i16.mayhemfile
-  PARSE-INT-I32-MAYHEMFILE: parse-integer-i32.mayhemfile
-  PARSE-INT-I64-MAYHEMFILE: parse-integer-i64.mayhemfile
-  PARSE-INT-I128-MAYHEMFILE: parse-integer-i128.mayhemfile
-  PARSE-INT-ISIZE-MAYHEMFILE: parse-integer-isize.mayhemfile
-  PARSE-INT-U8-MAYHEMFILE: parse-integer-u8.mayhemfile
-  PARSE-INT-U16-MAYHEMFILE: parse-integer-u16.mayhemfile
-  PARSE-INT-U32-MAYHEMFILE: parse-integer-u32.mayhemfile
-  PARSE-INT-U64-MAYHEMFILE: parse-integer-u64.mayhemfile
-  PARSE-INT-U128-MAYHEMFILE: parse-integer-u128.mayhemfile
-  PARSE-INT-USIZE-MAYHEMFILE: parse-integer-usize.mayhemfile
-  PARSE-FLOAT-F32: parse-float-f32.mayhemfile
-  PARSE-FLOAT-F64: parse-float-f64.mayhemfile
-  WRITE-FLOAT-F32: write-float-f32.mayhemfile
-  WRITE-FLOAT-F64: write-float-f64.mayhemfile
-  WRITE-INT-I8: write-integer-i8.mayhemfile
-  WRITE-INT-I16: write-integer-i16.mayhemfile
-  WRITE-INT-I32: write-integer-i32.mayhemfile
-  WRITE-INT-I64: write-integer-i64.mayhemfile
-  WRITE-INT-I128: write-integer-i128.mayhemfile
-  WRITE-INT-ISIZE: write-integer-isize.mayhemfile
-  WRITE-INT-U8: write-integer-u8.mayhemfile
-  WRITE-INT-U16: write-integer-u16.mayhemfile
-  WRITE-INT-U32: write-integer-u32.mayhemfile
-  WRITE-INT-U64: write-integer-u64.mayhemfile
-  WRITE-INT-U128: write-integer-u128.mayhemfile
-  WRITE-INT-USIZE: write-integer-usize.mayhemfile
+  PARSE-INT-I8-MAYHEMFILE: Mayhem/parse-integer-i8.mayhemfile
+  PARSE-INT-I16-MAYHEMFILE: Mayhem/parse-integer-i16.mayhemfile
+  PARSE-INT-I32-MAYHEMFILE: Mayhem/parse-integer-i32.mayhemfile
+  PARSE-INT-I64-MAYHEMFILE: Mayhem/parse-integer-i64.mayhemfile
+  PARSE-INT-I128-MAYHEMFILE: Mayhem/parse-integer-i128.mayhemfile
+  PARSE-INT-ISIZE-MAYHEMFILE: Mayhem/parse-integer-isize.mayhemfile
+  PARSE-INT-U8-MAYHEMFILE: Mayhem/parse-integer-u8.mayhemfile
+  PARSE-INT-U16-MAYHEMFILE: Mayhem/parse-integer-u16.mayhemfile
+  PARSE-INT-U32-MAYHEMFILE: Mayhem/parse-integer-u32.mayhemfile
+  PARSE-INT-U64-MAYHEMFILE: Mayhem/parse-integer-u64.mayhemfile
+  PARSE-INT-U128-MAYHEMFILE: Mayhem/parse-integer-u128.mayhemfile
+  PARSE-INT-USIZE-MAYHEMFILE: Mayhem/parse-integer-usize.mayhemfile
+  PARSE-FLOAT-F32: Mayhem/parse-float-f32.mayhemfile
+  PARSE-FLOAT-F64: Mayhem/parse-float-f64.mayhemfile
+  WRITE-FLOAT-F32: Mayhem/write-float-f32.mayhemfile
+  WRITE-FLOAT-F64: Mayhem/write-float-f64.mayhemfile
+  WRITE-INT-I8: Mayhem/write-integer-i8.mayhemfile
+  WRITE-INT-I16: Mayhem/write-integer-i16.mayhemfile
+  WRITE-INT-I32: Mayhem/write-integer-i32.mayhemfile
+  WRITE-INT-I64: Mayhem/write-integer-i64.mayhemfile
+  WRITE-INT-I128: Mayhem/write-integer-i128.mayhemfile
+  WRITE-INT-ISIZE: Mayhem/write-integer-isize.mayhemfile
+  WRITE-INT-U8: Mayhem/write-integer-u8.mayhemfile
+  WRITE-INT-U16: Mayhem/write-integer-u16.mayhemfile
+  WRITE-INT-U32: Mayhem/write-integer-u32.mayhemfile
+  WRITE-INT-U64: Mayhem/write-integer-u64.mayhemfile
+  WRITE-INT-U128: Mayhem/write-integer-u128.mayhemfile
+  WRITE-INT-USIZE: Mayhem/write-integer-usize.mayhemfile
 
 jobs:
   build:
