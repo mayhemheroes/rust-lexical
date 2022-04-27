@@ -138,45 +138,45 @@ jobs:
             args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-U16-MAYHEMFILE }}
             sarif-output: sarif
 
-      # parse integer u32
-      - name: Start analysis for parse-integer-u32
-        uses: ForAllSecure/mcode-action@v1
-        with:
-            mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-            args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-U32-MAYHEMFILE }}
-            sarif-output: sarif
+      # # parse integer u32
+      # - name: Start analysis for parse-integer-u32
+      #   uses: ForAllSecure/mcode-action@v1
+      #   with:
+      #       mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
+      #       args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-U32-MAYHEMFILE }}
+      #       sarif-output: sarif
 
-      # parse integer u64
-      - name: Start analysis for parse-integer-u64
-        uses: ForAllSecure/mcode-action@v1
-        with:
-            mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-            args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-U64-MAYHEMFILE }}
-            sarif-output: sarif
+      # # parse integer u64
+      # - name: Start analysis for parse-integer-u64
+      #   uses: ForAllSecure/mcode-action@v1
+      #   with:
+      #       mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
+      #       args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-U64-MAYHEMFILE }}
+      #       sarif-output: sarif
 
-      # parse integer u128
-      - name: Start analysis for parse-integer-u128
-        uses: ForAllSecure/mcode-action@v1
-        with:
-            mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-            args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-U128-MAYHEMFILE }}
-            sarif-output: sarif
+      # # parse integer u128
+      # - name: Start analysis for parse-integer-u128
+      #   uses: ForAllSecure/mcode-action@v1
+      #   with:
+      #       mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
+      #       args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-U128-MAYHEMFILE }}
+      #       sarif-output: sarif
 
-      # parse integer usize
-      - name: Start analysis for parse-integer-usize
-        uses: ForAllSecure/mcode-action@v1
-        with:
-            mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-            args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-USIZE-MAYHEMFILE }}
-            sarif-output: sarif
+      # # parse integer usize
+      # - name: Start analysis for parse-integer-usize
+      #   uses: ForAllSecure/mcode-action@v1
+      #   with:
+      #       mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
+      #       args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-USIZE-MAYHEMFILE }}
+      #       sarif-output: sarif
 
-      # parse float f32
-      - name: Start analysis for parse-float-f32
-        uses: ForAllSecure/mcode-action@v1
-        with:
-            mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-            args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-FLOAT-F32 }}
-            sarif-output: sarif
+      # # parse float f32
+      # - name: Start analysis for parse-float-f32
+      #   uses: ForAllSecure/mcode-action@v1
+      #   with:
+      #       mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
+      #       args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-FLOAT-F32 }}
+      #       sarif-output: sarif
 
       # # parse float f64
       # - name: Start analysis for parse-float-f64
