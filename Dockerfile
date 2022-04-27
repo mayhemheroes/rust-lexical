@@ -31,43 +31,21 @@ COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/parse-inte
 COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/parse-integer-u128 /
 COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/parse-integer-usize /
 COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/parse-float-f32 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/parse-float-f64 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-float-f32 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-float-f64 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-i8 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-i16 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-i32 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-i64 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-i128 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-isize /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-u8 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-u16 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-u32 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-u64 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-u128 /
-COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-usize /
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/parse-float-f64 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-float-f32 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-float-f64 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-i8 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-i16 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-i32 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-i64 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-i128 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-isize /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-u8 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-u16 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-u32 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-u64 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-u128 /
+# COPY --from=builder repo/fuzz/target/x86_64-unknown-linux-gnu/release/write-integer-usize /
 
 
 
