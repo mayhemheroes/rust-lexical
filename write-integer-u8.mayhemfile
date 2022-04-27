@@ -1,0 +1,5 @@
+project: rust-lexical
+target: write-integer-u8
+
+cmds:
+ - cmd: /write-integer-u8

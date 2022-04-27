@@ -1,0 +1,5 @@
+project: rust-lexical
+target: parse-integer-i128
+
+cmds:
+ - cmd: /parse-integer-i128

@@ -1,0 +1,5 @@
+project: rust-lexical
+target: write-float-f64
+
+cmds:
+ - cmd: /write-float-f64

@@ -1,0 +1,5 @@
+project: rust-lexical
+target: write-float-f32
+
+cmds:
+ - cmd: /write-float-f32
