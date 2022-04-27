@@ -1,0 +1,5 @@
+project: rust-lexical
+target: write-integer-i32
+
+cmds:
+ - cmd: /write-integer-i32

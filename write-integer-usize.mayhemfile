@@ -1,0 +1,5 @@
+project: rust-lexical
+target: write-integer-usize
+
+cmds:
+ - cmd: /write-integer-usize

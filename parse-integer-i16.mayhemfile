@@ -1,0 +1,5 @@
+project: rust-lexical
+target: parse-integer-i16
+
+cmds:
+ - cmd: /parse-integer-i16

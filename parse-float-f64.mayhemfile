@@ -1,0 +1,5 @@
+project: rust-lexical
+target: parse-float-f64
+
+cmds:
+ - cmd: /parse-float-f64

@@ -1,0 +1,5 @@
+project: rust-lexical
+target: parse-integer-isize
+
+cmds:
+ - cmd: /parse-integer-isize
