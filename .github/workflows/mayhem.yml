@@ -48,7 +48,7 @@ jobs:
         - os: ubuntu-latest
           triplet: x64-linux
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Log in to the Container registry
       uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
       with:
@@ -68,62 +68,50 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
     - name: Start analysis for parse-integer-i8
-      uses: ForAllSecure/mcode-action@v1
+      uses: ForAllSecure/mcode-action@long-runs
       with:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-I8-MAYHEMFILE
           }}
-        sarif-output: sarif
     - name: Start analysis for parse-integer-i16
-      uses: ForAllSecure/mcode-action@v1
+      uses: ForAllSecure/mcode-action@long-runs
       with:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-I16-MAYHEMFILE
           }}
-        sarif-output: sarif
     - name: Start analysis for parse-integer-i32
-      uses: ForAllSecure/mcode-action@v1
+      uses: ForAllSecure/mcode-action@long-runs
       with:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-I32-MAYHEMFILE
           }}
-        sarif-output: sarif
     - name: Start analysis for parse-integer-i64
-      uses: ForAllSecure/mcode-action@v1
+      uses: ForAllSecure/mcode-action@long-runs
       with:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-I64-MAYHEMFILE
           }}
-        sarif-output: sarif
     - name: Start analysis for parse-integer-i128
-      uses: ForAllSecure/mcode-action@v1
+      uses: ForAllSecure/mcode-action@long-runs
       with:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-I128-MAYHEMFILE
           }}
-        sarif-output: sarif
     - name: Start analysis for parse-integer-isize
-      uses: ForAllSecure/mcode-action@v1
+      uses: ForAllSecure/mcode-action@long-runs
       with:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-ISIZE-MAYHEMFILE
           }}
-        sarif-output: sarif
     - name: Start analysis for parse-integer-u8
-      uses: ForAllSecure/mcode-action@v1
+      uses: ForAllSecure/mcode-action@long-runs
       with:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-U8-MAYHEMFILE
           }}
-        sarif-output: sarif
     - name: Start analysis for parse-integer-u16
-      uses: ForAllSecure/mcode-action@v1
+      uses: ForAllSecure/mcode-action@long-runs
       with:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE-INT-U16-MAYHEMFILE
           }}
-        sarif-output: sarif
-    - name: Upload SARIF file(s)
-      uses: github/codeql-action/upload-sarif@v1
-      with:
-        sarif_file: sarif
